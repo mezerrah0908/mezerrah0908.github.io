@@ -218,15 +218,28 @@ button{
     }
 
 }
-.progress-bar{
+.progress-bar {
 
-    width:0;
+    width: 0;
 
-    height:100%;
+    height: 100%;
 
-    background:linear-gradient(90deg,#2563eb,#60a5fa);
+    background: linear-gradient(90deg, #2563eb, #60a5fa);
 
-    border-radius:20px;
+    border-radius: 20px;
+
+    animation: loadBar 2s forwards ease;
+}
+
+
+@keyframes loadBar {
+
+    to {
+
+        width: var(--target-width);
+
+    }
+
 }
 .progress{
     width:100%;

@@ -1,20 +1,6 @@
 window.addEventListener("load", function(){
 
 
-    document.querySelectorAll('.progress-bar').forEach(bar => {
-
-        let width = bar.getAttribute('data-width');
-
-        setTimeout(() => {
-
-            bar.style.width = width;
-
-        },300);
-
-    });
-
-
-
     $('.formation-item').click(function(){
 
         $(this).find('p').slideToggle();
