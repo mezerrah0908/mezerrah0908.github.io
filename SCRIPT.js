@@ -1,14 +1,18 @@
-document.querySelectorAll('.progress-bar').forEach(bar => {
+window.addEventListener("load", function(){
 
-    let width = bar.getAttribute('data-width');
 
-    setTimeout(() => {
+    document.querySelectorAll('.progress-bar').forEach(bar => {
 
-        bar.style.width = width;
+        let width = bar.getAttribute('data-width');
 
-    },300);
+        setTimeout(() => {
 
-});
+            bar.style.width = width;
+
+        },300);
+
+    });
+
 
 
     $('.formation-item').click(function(){
@@ -31,22 +35,24 @@ document.querySelectorAll('.progress-bar').forEach(bar => {
 
 
 
-const text = "Développeur Web & Étudiant SINF";
+    const text = "Développeur Web & Étudiant SINF";
 
-let i = 0;
+    let i = 0;
 
-function typing(){
+    function typing(){
 
-    if(i < text.length){
+        if(i < text.length){
 
-        document.getElementById("typing").innerHTML += text.charAt(i);
+            document.getElementById("typing").innerHTML += text.charAt(i);
 
-        i++;
+            i++;
 
-        setTimeout(typing,100);
+            setTimeout(typing,100);
+
+        }
 
     }
 
-}
+    typing();
 
-typing();
+});
