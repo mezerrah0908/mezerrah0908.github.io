@@ -1,19 +1,14 @@
-$(document).ready(function(){
+document.querySelectorAll('.progress-bar').forEach(bar => {
 
-    $('.progress-bar').each(function(){
+    let width = bar.getAttribute('data-width');
 
-        let width = $(this).attr('data-width');
+    setTimeout(() => {
 
-        $(this).css("width","0%");
+        bar.style.width = width;
 
-        $(this).animate({
+    },300);
 
-            width: width
-
-        },2000);
-
-    });
-
+});
 
 
     $('.formation-item').click(function(){
@@ -33,8 +28,6 @@ $(document).ready(function(){
         },800);
 
     });
-
-});
 
 
 

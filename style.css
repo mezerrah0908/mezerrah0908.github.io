@@ -102,10 +102,16 @@ h2{
 }
 
 .progress-bar{
+
     width:0;
+
     height:100%;
+
     background:linear-gradient(90deg,#2563eb,#60a5fa);
+
     border-radius:20px;
+
+    transition:width 2s ease;
 }
 
 .formation-item{
